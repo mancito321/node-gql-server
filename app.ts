@@ -5,11 +5,14 @@ import {createServer} from 'http'
 import compression from 'compression'
 import cors from 'cors'
 import schema from './src/schema'
+import context from './src/contextGen'
+
 
 
 const app = express()
 const server = new ApolloServer({
     schema,
+    context:context,
     validationRules:[depthLimit(7)]//setup gql query max depth
 })
 

@@ -5,6 +5,7 @@ import resolvers from './resolverMap'
 import {GraphQLSchema} from 'graphql'
 
 
+
 const schema: GraphQLSchema = makeExecutableSchema({
     typeDefs,
     resolvers
