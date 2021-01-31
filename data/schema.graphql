@@ -1,3 +1,15 @@
+input UserInput{
+    id:String!
+    name:String
+    age:String
+    username:String
+    hireDate:String
+}
 type Query {
     getUsers(orderBy:String!,order:String!): String!
+}
+type Mutation{
+    editUser(inputUser:UserInput):String!
+    createUser(inputUser:UserInput):String!
+    deleteUser(id:String!):String!
 }
