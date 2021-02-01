@@ -1,6 +1,7 @@
 interface orderArgs{
     orderBy:string,
-    order:string
+    order:string,
+    name:string
 }
 interface userArgs{
     id:string,

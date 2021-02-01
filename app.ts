@@ -28,6 +28,6 @@ server.applyMiddleware({
 const httpServer = createServer(app)
 
 httpServer.listen(
-    {port:3000},
-    (): void => console.log(`\n🚀      GraphQL is now running on http://localhost:3000/graphql`)
+    {port:8082},
+    (): void => console.log(`\n🚀      GraphQL is now running on http://localhost:8082/graphql`)
     )

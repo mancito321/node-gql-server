@@ -6,7 +6,7 @@ input UserInput{
     hireDate:String
 }
 type Query {
-    getUsers(orderBy:String!,order:String!): String!
+    getUsers(orderBy:String!,order:String!,name:String!): String!
 }
 type Mutation{
     editUser(inputUser:UserInput):String!
